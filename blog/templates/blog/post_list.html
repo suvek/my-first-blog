@@ -1,0 +1,224 @@
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+     <title>Suvek's Resume</title>
+
+
+     <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
+        .clear { clear: both; }
+        #page-wrap { width: 800px; margin: 40px auto 60px; }
+        #pic { float: right; margin: -30px 0 0 0; }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        p { margin: 0 0 16px 0; }
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        a:hover { border-bottom-style: solid; color: black; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { width: 500px; float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        dd { width: 600px; float: right; }
+        dd.clear { float: none; margin: 0; height: 15px; }
+     </style>
+</head>
+
+<body>
+
+    <div id="page-wrap">
+    
+        <img src="images/suvek.jpg" alt="Photo of Suvek" id="pic" width="200px" height="200px" />
+    
+        <div id="contact-info" class="vcard">
+        
+            <!-- Microformats! -->
+        
+           <!-- <h1 class="fn">Suvek Singh</h1>
+        
+            <p>
+                Cell: <span class="tel">+91-8626894422</span><br />
+                Email: <a class="email" href="mailto:ersuvek@gmail.com">ersuvek@gmail.com</a>
+            </p>
+        </div>
+                
+        <div id="objective">
+            <p>
+                I am an outgoing and energetic (ask anybody) young professional, seeking a 
+                career that fits my professional skills, personality, and murderous tendencies. 
+                My squid-like head is a masterful problem solver and inspires fear in who gaze upon it. 
+                I can bring world domination to your organization. 
+            </p>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <dl>
+            <dd class="clear"></dd>
+            
+            <dt>Education</dt>
+            <dd>
+                <h2>B.Tech. in Computer Science Engineering</h2>
+                <p><strong>University:</strong> Punjab technical University <br />
+                   <strong>College:</strong> Sri Sai College Of Engineering and Technology Badhani (Ptk.)<br/>
+                    <strong>Codeacademy:</strong> Javascript , JQuery.  <br/> Profile link: <a href="http://www.codecademy.com/netSurfer52521">http://www.codecademy.com/netSurfer52521</a> </p>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Skills</dt>
+            <dd>
+                <h2>Technical skills</h2>
+                <p>OOP, AJAX, Web Security, Web service, Stored Procedure.</p>
+            </dd>
+  
+<dd>
+                <h2>Languages</h2>
+                <p>ASP.NET, ADO.NET, C#, C, C++.</p>
+            </dd>    
+          
+            <dd class="clear"></dd>
+            
+            <dt>Experience</dt>
+            <dd>
+                <h2>Work Experience <span></span></h2>
+                <ul>
+                    <li>2010 - 2012 Technical Associate developer for 9Vision IT Corporates Pvt. Ltd. using Asp.net ,Sql server 2005.</li>
+                    <li>2013-2014 Studied Banking Exam.</li>
+                    <li>2014 - 2015 worked for PWD as a computer operator.</li>
+                </ul>
+  </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Hobbies</dt>
+            <dd>Watching Cricket, Playing Cricket and Watching Tv.</dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Project Work</dt>
+            <dd><b>Title: Esanjeevani</b></br>
+Description: this project is based on hospital management in which we maintained </br>
+
+patient's details, and doctor's details.</br>
+
+Languaes:.net(ADO.NET,ASP.NET),sql server 2005</br>
+
+Frame work: 3.5</br>
+
+Members: 3</br>
+
+My Role: developing administration module.</dd>
+<br/>
+      
+<dd> <b>Title: 3CConsultancy </b><br/>
+
+Description-To maintain employee information. this project gives us an opportunity </br>
+
+to get information about jobs , to upload our resume etc.</br>
+
+Languages: ASP.net ,ADO.net, sql server 2005,enterprice library 4.1</br>
+
+Frame work:3.5</br>
+
+Members:3</br>
+
+My Role: connectivity of frontend and backend by using ado.net.</dd>      
+            <dd class="clear">
+</dd>
+   <dt>Links</dt>
+            <dd>
+                <h2><a href="https://twitter.com/suveksingh1">Twitter</a><span></span></h2>
+   </dd>    
+<dd>
+                <h2><a href="https://in.linkedin.com/pub/suvek-singh/74/a66/a53">LinkedIn</a><span></span></h2>
+   </dd>   
+   <dd>
+                <h2><a href="https://www.facebook.com/subbusamyal">Facebook</a><span></span></h2>
+   </dd>      
+            
+            <dd class="clear"></dd>
+            
+             
+            <dd class="clear"></dd>
+            
+              </dl>
+        
+        <div class="clear"></div>
+    
+    </div>
+
+</body>
+
+</html> -->
